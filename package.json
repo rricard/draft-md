@@ -1,0 +1,24 @@
+{
+  "name": "draft-md",
+  "version": "0.1.0",
+  "description": "React/Draft.js-based Markdown editor inspired by iA Writer",
+  "main": "lib/",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rricard/draft-md.git"
+  },
+  "keywords": [
+    "react",
+    "draft",
+    "markdown"
+  ],
+  "author": "Robin Ricard",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rricard/draft-md/issues"
+  },
+  "homepage": "https://github.com/rricard/draft-md#readme"
+}
