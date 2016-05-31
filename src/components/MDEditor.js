@@ -10,6 +10,8 @@ import {
   ContentState,
 } from "draft-js"
 
+import mdDecorator from "../decorator"
+
 export class MDEditor extends Component {
   props: MDEditorProps;
   state: MDEditorState;
@@ -21,9 +23,9 @@ export class MDEditor extends Component {
     this.state = {
       editorState: initialValue ?
         EditorState.createWithContent(
-          ContentState.createFromText(initialValue)
+          ContentState.createFromText(initialValue), mdDecorator
         ) :
-        EditorState.createEmpty(),
+        EditorState.createEmpty(mdDecorator),
     }
   }
 
