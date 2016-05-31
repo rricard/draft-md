@@ -1,9 +1,12 @@
 /* @flow */
 
+const path = require("path")
+
 module.exports = {
   entry: "./src/index.js",
   output: {
-    path: __dirname + '/dist',
+    path: path.join(__dirname, '/dist'),
+    publicPath: '/dist/',
     filename: "bundle.js",
     libraryTarget: "var",
     library: "DraftMD",

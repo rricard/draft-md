@@ -4,5 +4,5 @@ esproposal.class_static_fields=enable
 
 [ignore]
 .*/fbjs/lib/.*
-.*/dist/.*
-.*/lib/.*
+.*/draft-md/dist/.*
+.*/draft-md/lib/.*

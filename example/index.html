@@ -8,7 +8,12 @@
     <div id="editor"></div>
     <script src="/dist/bundle.js"></script>
     <script type="text/javascript">
-      DraftMD.mountMDEditor({}, document.getElementById("editor"))
+      DraftMD.mountMDEditor({
+        initialValue: "# Hello\n_world_!",
+        onChange: function(text) {
+          console.log("NEW MARKDOWN:", text)
+        }
+      }, document.getElementById("editor"))
     </script>
   </body>
 </html>

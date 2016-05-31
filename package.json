@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/rricard/draft-md#readme",
   "dependencies": {
-    "draft": "^0.2.3",
+    "draft-js": "^0.7.0",
     "react": "^15.1.0",
     "react-dom": "^15.1.0"
   },
