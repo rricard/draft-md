@@ -20,5 +20,10 @@
   "bugs": {
     "url": "https://github.com/rricard/draft-md/issues"
   },
-  "homepage": "https://github.com/rricard/draft-md#readme"
+  "homepage": "https://github.com/rricard/draft-md#readme",
+  "dependencies": {
+    "draft": "^0.2.3",
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0"
+  }
 }
