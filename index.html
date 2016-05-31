@@ -24,6 +24,8 @@
 
 <p>React/Draft.js-based Markdown editor inspired by iA Writer</p>
 
+<div id="editor"></div>
+
 <h2>
 <a id="installation" class="anchor" href="#installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation</h2>
 
@@ -66,6 +68,22 @@ ReactDOM.render(
 
     </section>
 
-  
+    <script src="./dist/bundle.js"></script>
+    <script type="text/javascript">
+    DraftMD.mountMDEditor({
+      initialValue: "# Hello!\n\nYou can **edit** this text!",
+      style: {
+        border: "solid black 1px",
+        padding: 5,
+        margin: 5,
+        borderRadius: 5,
+        overflow: "scroll",
+        fontFamily: "Hack, Menlo, monospace",
+      },
+      spellCheck: true,
+      },
+      document.getElementById("editor")
+    )
+    </script>
   </body>
 </html>
