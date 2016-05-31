@@ -12,7 +12,16 @@
         initialValue: "# Hello\n_world_!",
         onChange: function(text) {
           console.log("NEW MARKDOWN:", text)
-        }
+        },
+        style: {
+          height: 200,
+          border: "solid black 1px",
+          padding: 5,
+          margin: 5,
+          borderRadius: 5,
+          overflow: "scroll",
+          fontFamily: "Hack, Menlo, Courrier",
+        },
       }, document.getElementById("editor"))
     </script>
   </body>

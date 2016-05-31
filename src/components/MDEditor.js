@@ -28,15 +28,21 @@ export class MDEditor extends Component {
   }
 
   render(): React.Element {
+    const {style} = this.props
     const {editorState} = this.state
     return (
-      <div>
+      <div style={style} onClick={() => this.handleFocus()}>
         <Editor
           editorState={editorState}
           onChange={es => this.handleChange(es)}
+          ref="editor"
           />
       </div>
     )
+  }
+
+  handleFocus() {
+    this.refs.editor.focus()
   }
 
   handleChange(editorState: EditorState) {
@@ -53,12 +59,14 @@ export class MDEditor extends Component {
   static propTypes = {
     initialValue: PropTypes.string,
     onChange: PropTypes.func,
+    style: PropTypes.object,
   }
 }
 
 export type MDEditorProps = {
   initialValue?: string,
   onChange?: (value: string) => void,
+  style?: {[cssProp: string]: mixed},
 }
 
 type MDEditorState = {
