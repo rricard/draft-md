@@ -4,7 +4,8 @@
   "description": "React/Draft.js-based Markdown editor inspired by iA Writer",
   "main": "lib/",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "lint": "eslint src"
   },
   "repository": {
     "type": "git",
