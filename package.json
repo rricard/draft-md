@@ -6,7 +6,9 @@
   "scripts": {
     "test": "jest",
     "lint": "eslint src",
-    "typecheck": "flow check"
+    "typecheck": "flow check",
+    "build": "babel src --out-dir lib",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
