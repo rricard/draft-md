@@ -5,7 +5,8 @@
   "main": "lib/",
   "scripts": {
     "test": "jest",
-    "lint": "eslint src"
+    "lint": "eslint src",
+    "typecheck": "flow check"
   },
   "repository": {
     "type": "git",

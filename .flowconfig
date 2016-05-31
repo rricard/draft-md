@@ -1,0 +1,4 @@
+[ignore]
+.*/fbjs/lib/.*
+.*/dist/.*
+.*/lib/.*
