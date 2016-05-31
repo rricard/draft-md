@@ -3,12 +3,14 @@
   "version": "0.1.0",
   "description": "React/Draft.js-based Markdown editor inspired by iA Writer",
   "main": "lib/",
+  "browser": "dist/bundle.js",
   "scripts": {
     "test": "jest",
-    "lint": "eslint src",
+    "lint": "eslint src webpack.config.js",
     "typecheck": "flow check",
     "build": "babel src --out-dir lib",
-    "prepublish": "npm run build"
+    "bundle": "webpack",
+    "prepublish": "npm run build && npm run bundle"
   },
   "repository": {
     "type": "git",

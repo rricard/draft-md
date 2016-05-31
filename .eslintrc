@@ -13,8 +13,7 @@
   "rules": {
     "indent": [2, 2],
     "semi": [2, "never"],
-    "comma-dangle": [2, "always-multiline"],
-    "semi": [2, "never"]
+    "comma-dangle": [2, "always-multiline"]
   },
   "plugins": [
     "react"
