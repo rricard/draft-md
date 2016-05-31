@@ -28,13 +28,14 @@ export class MDEditor extends Component {
   }
 
   render(): React.Element {
-    const {style} = this.props
+    const {style, spellCheck} = this.props
     const {editorState} = this.state
     return (
       <div style={style} onClick={() => this.handleFocus()}>
         <Editor
           editorState={editorState}
           onChange={es => this.handleChange(es)}
+          spellCheck={spellCheck}
           ref="editor"
           />
       </div>
@@ -60,6 +61,7 @@ export class MDEditor extends Component {
     initialValue: PropTypes.string,
     onChange: PropTypes.func,
     style: PropTypes.object,
+    spellCheck: PropTypes.bool,
   }
 }
 
@@ -67,6 +69,7 @@ export type MDEditorProps = {
   initialValue?: string,
   onChange?: (value: string) => void,
   style?: {[cssProp: string]: mixed},
+  spellCheck?: boolean,
 }
 
 type MDEditorState = {
