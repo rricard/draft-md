@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "React/Draft.js-based Markdown editor inspired by iA Writer",
   "main": "lib/",
+  "jsnext:main": "src/",
   "browser": "dist/bundle.js",
   "scripts": {
     "test": "jest",
