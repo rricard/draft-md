@@ -1,0 +1,6 @@
+{
+  "name": "DraftMD",
+  "tagline": "React/Draft.js-based Markdown editor inspired by iA Writer",
+  "body": "# DraftMD\r\n\r\nReact/Draft.js-based Markdown editor inspired by iA Writer\r\n\r\n## Installation\r\n\r\n    npm install draft-md\r\n\r\nor consume the bundled file in the `dist/` directory\r\n\r\n## Usage\r\n\r\n### Using React\r\n\r\nIf you use react already, it's very straightforward:\r\n\r\n    import {MDEditor} from \"draft-md\"\r\n    import React from \"react\"\r\n    import ReactDOM from \"react-dom\"\r\n    ReactDOM.render(\r\n      <MDEditor initialValue=\"# Hello!\" onChange={console.log} />,\r\n      document.getElementById(\"editor\")\r\n    )\r\n\r\n### Without React - Global object in Bundle\r\n\r\n    DraftMD.mountMDEditor(\r\n      {initialValue: \"# Hello!\"},\r\n      document.getElementById(\"editor\")\r\n    )\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
